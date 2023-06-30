@@ -17,7 +17,6 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-
 // Get password length from user input
 function getPasswordLength() {
   var length = prompt("Enter the length of the password (between 8 and 128 characters):");
@@ -29,4 +28,22 @@ function getPasswordLength() {
   }
 
   return length;
+}
+
+// Generate password based on user-selected criteria
+function generatePassword() {
+  var passwordLength = getPasswordLength();
+  var includeLowercase = confirm("Include lowercase characters? (Cancel for 'no')");
+  var includeUppercase = confirm("Include uppercase characters? (Cancel for 'no')");
+  var includeNumeric = confirm("Include numeric characters? (Cancel for 'no')");
+  var includeSpecial = confirm("Include special characters? (Cancel for 'no')");
+
+  // Validate user input
+  if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
+    alert("You must select at least one character type.");
+    return "";
+  }
+
+  var password = generateRandomPassword(passwordLength, includeLowercase, includeUppercase, includeNumeric, includeSpecial);
+  return password;
 }
