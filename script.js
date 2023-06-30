@@ -46,7 +46,7 @@ function generatePassword() {
   return password;
 }
 
-// Generate random password based on user criteria
+// Build character set based on user criteria
 function generateRandomPassword(length, includeLowercase, includeUppercase, includeNumeric, includeSpecial) {
   var charset = "";
   var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
@@ -54,7 +54,6 @@ function generateRandomPassword(length, includeLowercase, includeUppercase, incl
   var numericChars = "0123456789";
   var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
-  // Build character set based on user criteria
   if (includeLowercase) {
     charset += lowercaseChars;
   }
@@ -68,6 +67,7 @@ function generateRandomPassword(length, includeLowercase, includeUppercase, incl
     charset += specialChars;
   }
 
+  // FINALLY GENERATES PASSWORD FOR THE USER
   var password = "";
   for (var i = 0; i < length; i++) {
     var randomIndex = Math.floor(Math.random() * charset.length);
