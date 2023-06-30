@@ -33,10 +33,10 @@ function getPasswordLength() {
 // Generate password based on user-selected criteria
 function generatePassword() {
   var passwordLength = getPasswordLength();
-  var includeLowercase = confirm("Include lowercase characters? (Cancel for 'no')");
-  var includeUppercase = confirm("Include uppercase characters? (Cancel for 'no')");
-  var includeNumeric = confirm("Include numeric characters? (Cancel for 'no')");
-  var includeSpecial = confirm("Include special characters? (Cancel for 'no')");
+  var includeLowercase = confirm("Include lowercase characters? (Press Cancel for 'No')");
+  var includeUppercase = confirm("Include uppercase characters? (Press Cancel for 'No')");
+  var includeNumeric = confirm("Include numeric characters? (Press Cancel for 'No')");
+  var includeSpecial = confirm("Include special characters? (Press Cancel for 'No')");
 
   // Validate user input
   if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
