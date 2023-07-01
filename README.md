@@ -12,7 +12,7 @@
 
 ## Description 
 
-[Visit the Deployed Site](https://youtu.be/BFyeuLhjcPY)
+[Visit the Deployed Site](https://jesustgr.github.io/password-generator/)
 
 This task required me to create an application that a user can use to generate a random password based on criteria they've selected. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript code that I wrote. It has a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
@@ -42,7 +42,7 @@ My biggest takeaway from completing this task is the importance of CALLING a fun
 ## Author Info
 
 
-### Farley Wittles 
+### Jesus Thomas Reyes 
 
 
 * [Portfolio](https://jesustgr.github.io/my-portfolio/)
